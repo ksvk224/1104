@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>발로란트</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    
+    <div class="navbar">
+        <div style="display: flex; align-items: center;">
+            <img src="./img/라이엇 로고.png" alt="" class="logo"> 
+            <div class="navbar-menu">
+                <a href="#">게임 정보</a>
+                <a href="#">미디어</a>
+                <a href="#">소식</a>
+                <a href="#">고객지원</a>
+                <a href="#">이벤트</a>
+                <a href="#">소셜 미디어</a>
+                <a href="#">E-스포츠</a>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="검색..." />
+            <button class="play-button">지금 플레이하기</button>
+        </div>
+    </div>
+
+    <div class="fullscreen-video">
+        <video autoplay muted loop>
+            <source src="video/y2mate.com - 준비된 미래를 맞이하세요  에피소드 9 액트 I 트레일러  발로란트_1080p.mp4" type="video/mp4">
+        </video>
+        <div class="center-content">
+            <h1 class="glitch">한계를 돌파하라</h1>
+            <img src="./img/발로란트 로고.png" alt="" class="logo2">
+            <button class="custom-btn btn-5"><span>지금 플레이하기</span></button>
+        </div>
+    </div>
+
+    <div class="latest-news">
+        <h2>최신소식</h2>
+        <div class="news-box">
+            <img src="./img/최신 소식 1.jpg" alt="개발자 블로그">
+            <p>개발자 블로그</p>
+        </div>
+        <div class="news-box">
+            <img src="./img/최신 소식 2.jpg" alt="게임 업데이트">
+            <p>게임 업데이트</p>
+        </div>
+        <div class="news-box">
+            <img src="./img/최신 소식 3.jpg" alt="게임 업데이트">
+            <p>게임 업데이트</p>
+        </div>
+    </div>
+
+    <div class="episode">
+        <h2>에피소드</h2>
+        <div class="content-container">
+            <div class="text-box">
+                <h3>에피소드 // 컬리전</h3>
+                <p>.</p>
+                <button class="video-button">영상 보기</button>
+            </div>
+            <div class="media-box">
+                <video controls>
+                    <source src="./video/y2mate.com - 준비된 미래를 맞이하세요  에피소드 9 액트 I 트레일러  발로란트_1080p.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    
+    <div class="intro">
+        <h2>우리는 발로란트다</h2>
+        <div class="content-container">
+            <div class="text-box">
+                <p>전 세계의 경쟁 무대에서 여러분의 스타일과 실력을 보여 주세요. 정밀한 사격과 전략 스킬을 사용해 13라운드 동안 공격과 방어를 번갈아 진행하게 됩니다. 라운드당 목숨은 하나이며, 생존하려면 상대보다 더 빠르게 판단해야 합니다. 데스매치와 스파이크 돌격, 경쟁전과 일반전에서 적과 싸워 이기세요.</p>
+                <button>게임 배우기</button>
+            </div>
+            <div class="media-box">
+                <img src="./img/발로란트 움짤.gif" alt="움직이는 짤" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+
+    <div class="character">
+        <h2>요원</h2>
+        <div class="role-icons">
+            <div class="role-icon active" data-role="duelist">
+                <img src="./img/icons/duelist-icon.png" alt="타격대">
+                <span>타격대</span>
+            </div>
+            <div class="role-icon" data-role="initiator">
+                <img src="./img/icons/initiator-icon.png" alt="척후대">
+                <span>척후대</span>
+            </div>
+            <div class="role-icon" data-role="sentinel">
+                <img src="./img/icons/sentinel-icon.png" alt="감시자">
+                <span>감시자</span>
+            </div>
+            <div class="role-icon" data-role="controller">
+                <img src="./img/icons/controller-icon.png" alt="전략가">
+                <span>전략가</span>
+            </div>
+        </div>
+
+        <div class="character-display">
+            <!-- 타격대 -->
+            <div class="role-content active" id="duelist">
+                <div class="agent-showcase">
+                    <img src="./img/타격대 일러스트.png" alt="레이나" class="agent-img">
+                </div>
+                <div class="role-info">
+                    <h3>타격대</h3>
+                    <p>공격적인 플레이로 전장을 지배하는 요원들입니다. 높은 기동성과 화력으로 적진에 혼란을 주고 돌파구를 만듭니다.</p>
+                </div>
+            </div>
+
+            <!-- 척후대 -->
+            <div class="role-content" id="initiator">
+                <div class="agent-showcase">
+                    <img src="./img/agents/sova.png" alt="소바" class="agent-img">
+                </div>
+                <div class="role-info">
+                    <h3>척후대</h3>
+                    <p>적의 위치를 파악하고 전투를 유리하게 이끄는 요원들입니다. 정보 수집과 전장 통제로 팀을 지원합니다.</p>
+                </div>
+            </div>
+
+            <!-- 감시자 -->
+            <div class="role-content" id="sentinel">
+                <div class="agent-showcase">
+                    <img src="./img/agents/cypher.png" alt="사이퍼" class="agent-img">
+                </div>
+                <div class="role-info">
+                    <h3>감시자</h3>
+                    <p>방어선을 강화하고 팀을 보호하는 요원들입니다. 견고한 수비와 영역 통제로 적의 공격을 차단합니다.</p>
+                </div>
+            </div>
+
+            <!-- 전략가 -->
+            <div class="role-content" id="controller">
+                <div class="agent-showcase">
+                    <img src="./img/agents/omen.png" alt="오멘" class="agent-img">
+                </div>
+                <div class="role-info">
+                    <h3>전략가</h3>
+                    <p>전장을 통제하고 전술적 우위를 확보하는 요원들입니다. 연막과 시야 차단으로 팀의 전략을 지원합니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map">
+        <h2>맵 소개</h2>
+        <div class="map-container">
+            <div class="map-overview">
+                <h3>맵</h3>
+                <p class="map-description">
+                    팀 전략, 환상적인 플레이, 클러치 상황에 맞게 기획된 각 맵에서 
+                    창의적인 판단력을 뽐내고 오랫동안 다른 플레이어들이 따라 할 
+                    플레이를 선보이세요.
+                </p>
+            </div>
+            
+            <div class="map-showcase">
+                <div class="map-slider">
+                    <div class="map-slide active">
+                        <img src="./img/발로란트 맵 1.jpg" alt="어센트">
+                        <p class="map-caption">어센트 - 이탈리아의 작은 도시를 배경으로 한 맵</p>
+                    </div>
+                    <div class="map-slide">
+                        <img src="./img/maps/bind.jpg" alt="바인드">
+                        <p class="map-caption">바인드 - 텔레포터를 통한 빠른 이동이 특징인 맵</p>
+                    </div>
+                    <div class="map-slide">
+                        <img src="./img/maps/haven.jpg" alt="헤이븐">
+                        <p class="map-caption">헤이븐 - 3개의 폭탄 설치 지점이 있는 유일한 맵</p>
+                    </div>
+                </div>
+                <div class="map-controls">
+                    <button class="map-prev">&#10094;</button>
+                    <button class="map-next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeCharacter(image) {
+            document.getElementById('character-image').src = image;
+        }
+    </script>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- 로고 섹션 -->
+            <div class="footer-logo">
+                <img src="./img/라이엇 로고.png" alt="라이엇 게임즈 로고" class="riot-logo">
+                <img src="./img/발로란트 로고 - 흰색.png" alt="발로란트 로고" class="valorant-logo">
+            </div>
+
+            <!-- 메인 링크 섹션 -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>지원</h4>
+                    <ul>
+                        <li><a href="#">고객지원</a></li>
+                        <li><a href="#">시스템 요구사항</a></li>
+                        <li><a href="#">보안</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>커뮤니티</h4>
+                    <ul>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 다운로드 버튼 -->
+            <div class="footer-download">
+                <button class="download-btn">무료로 플레이하기</button>
+            </div>
+
+            <!-- 법적 고지 섹션 -->
+            <div class="footer-legal">
+                <div class="legal-links">
+                    <a href="#">서비스 약관</a>
+                    <a href="#">개인정보 처리방침</a>
+                    <a href="#">쿠키 설정</a>
+                </div>
+                <div class="age-rating">
+                    <img src="./img/rating.png" alt="게임물 등급" class="rating-icon">
+                    <span>청소년 이용불가</span>
+                </div>
+                <p class="copyright">
+                    © 2024 Riot Games, Inc. VALORANT과 관련 로고는 Riot Games, Inc.의 상표, 서비스표 또는 등록 상표입니다.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+</html>
